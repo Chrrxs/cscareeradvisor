@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+
+<!-- ============================================ -->
+<!-- JOB RECOMMENDATIONS AIML FILE -->
+<!-- Detailed career information for all 5 job types -->
+<!-- ============================================ -->
+
+<!-- Software Developer Recommendation -->
+<category>
+    <pattern>SOFTWARE DEVELOPER RECOMMENDATION</pattern>
+    <template>
+        🎯 **CAREER RECOMMENDATION: SOFTWARE DEVELOPER/ENGINEER**
+        
+        Based on your interest in creating applications and solving coding problems, Software Development is an excellent match for you!
+        
+        **What You'll Do:**
+        • Design and develop software applications
+        • Write, test, and maintain code
+        • Collaborate with teams to solve complex problems
+        • Work with various programming languages and frameworks
+        • Debug and optimize applications for performance
+        
+        **Required Skills:**
+        • Proficiency in programming languages (Java, Python, C++, JavaScript)
+        • Problem-solving and analytical thinking
+        • Understanding of software development methodologies
+        • Version control systems (Git)
+        • Database knowledge
+        
+        **Career Outlook:**
+        • Job Growth: 25% through 2031 (much faster than average)
+        • Median Salary: $70,000 - $150,000+ depending on experience and location
+        • High demand across all industries
+        
+        **Next Steps:**
+        • Build a portfolio of projects
+        • Learn popular frameworks and libraries
+        • Consider specializing in mobile, web, or desktop development
+        • Practice coding challenges and algorithms
+        
+        Would you like information about other career paths or more details about software development specializations?
+    </template>
+</category>
+
+<!-- Data Scientist Recommendation -->
+<category>
+    <pattern>DATA SCIENTIST RECOMMENDATION</pattern>
+    <template>
+        🎯 **CAREER RECOMMENDATION: DATA SCIENTIST**
+        
+        Perfect! Your love for mathematics and data analysis makes you an ideal candidate for Data Science!
+        
+        **What You'll Do:**
+        • Analyze large datasets to extract meaningful insights
+        • Build predictive models and machine learning algorithms
+        • Create data visualizations and reports
+        • Work with stakeholders to solve business problems
+        • Design and conduct experiments
+        
+        **Required Skills:**
+        • Programming languages (Python, R, SQL)
+        • Statistics and advanced mathematics
+        • Machine learning and AI techniques
+        • Data visualization tools (Tableau, PowerBI)
+        • Critical thinking and business acumen
+        
+        **Career Outlook:**
+        • Job Growth: 36% through 2031 (much faster than average)
+        • Median Salary: $80,000 - $180,000+ depending on experience
+        • High demand across healthcare, finance, tech, and retail
+        
+        **Next Steps:**
+        • Master Python/R and SQL
+        • Learn machine learning libraries (scikit-learn, TensorFlow)
+        • Work on data science projects and build a portfolio
+        • Consider earning certifications in cloud platforms (AWS, Azure)
+        
+        Would you like to explore other data-related careers or learn about specific data science specializations?
+    </template>
+</category>
+
+<!-- Data Analyst Recommendation -->
+<category>
+    <pattern>DATA ANALYST RECOMMENDATION</pattern>
+    <template>
+        🎯 **CAREER RECOMMENDATION: DATA ANALYST**
+        
+        Great choice! Data Analysis is perfect for someone interested in data insights without heavy mathematics.
+        
+        **What You'll Do:**
+        • Collect and organize data from various sources
+        • Create reports and dashboards for business decisions
+        • Identify trends and patterns in data
+        • Present findings to stakeholders
+        • Support data-driven decision making
+        
+        **Required Skills:**
+        • SQL for database queries
+        • Excel and data visualization tools
+        • Basic statistics and analytical thinking
+        • Business intelligence tools (Tableau, PowerBI)
+        • Communication and presentation skills
+        
+        **Career Outlook:**
+        • Job Growth: 25% through 2031
+        • Median Salary: $55,000 - $95,000 depending on experience
+        • Gateway to more advanced data roles
+        
+        **Next Steps:**
+        • Master SQL and Excel
+        • Learn Tableau or PowerBI
+        • Understand business processes and KPIs
+        • Practice with real datasets
+        
+        Would you like to know about advancing to data scientist roles or other analytics careers?
+    </template>
+</category>
+
+<!-- Cybersecurity Specialist Recommendation -->
+<category>
+    <pattern>CYBERSECURITY SPECIALIST RECOMMENDATION</pattern>
+    <template>
+        🎯 **CAREER RECOMMENDATION: CYBERSECURITY SPECIALIST**
+        
+        Excellent! Cybersecurity is one of the most critical and fastest-growing fields in technology.
+        
+        **What You'll Do:**
+        • Monitor and protect computer systems from security threats
+        • Conduct security assessments and vulnerability testing
+        • Implement security measures and protocols
+        • Investigate security incidents and breaches
+        • Develop security policies and procedures
+        
+        **Required Skills:**
+        • Network security and protocols
+        • Security tools and technologies
+        • Risk assessment and management
+        • Incident response procedures
+        • Strong analytical and problem-solving skills
+        
+        **Career Outlook:**
+        • Job Growth: 35% through 2031 (much faster than average)
+        • Median Salary: $75,000 - $160,000+ depending on specialization
+        • Critical shortage of qualified professionals
+        
+        **Specialization Areas:**
+        • Network Security
+        • Ethical Hacking/Penetration Testing
+        • Digital Forensics
+        • Security Compliance
+        • Cloud Security
+        
+        **Next Steps:**
+        • Earn security certifications (CompTIA Security+, CISSP)
+        • Practice with security tools and labs
+        • Learn about different attack vectors and defenses
+        • Consider specializing in a specific security domain
+        
+        Would you like to learn about specific cybersecurity specializations or other security-related careers?
+    </template>
+</category>
+
+<!-- Web Developer Frontend Recommendation -->
+<category>
+    <pattern>WEB DEVELOPER FRONTEND RECOMMENDATION</pattern>
+    <template>
+        🎯 **CAREER RECOMMENDATION: FRONTEND WEB DEVELOPER**
+        
+        Perfect! Frontend development combines technical skills with creativity and user experience design.
+        
+        **What You'll Do:**
+        • Create user interfaces for websites and web applications
+        • Implement responsive designs that work on all devices
+        • Optimize websites for performance and accessibility
+        • Collaborate with designers and backend developers
+        • Ensure cross-browser compatibility
+        
+        **Required Skills:**
+        • HTML, CSS, and JavaScript
+        • Frontend frameworks (React, Vue.js, Angular)
+        • Responsive design principles
+        • Version control (Git)
+        • Basic design principles and UX understanding
+        
+        **Career Outlook:**
+        • Job Growth: 23% through 2031
+        • Median Salary: $60,000 - $120,000 depending on experience
+        • High demand for mobile-responsive development
+        
+        **Next Steps:**
+        • Master HTML, CSS, and JavaScript
+        • Learn a popular frontend framework
+        • Build a portfolio of responsive websites
+        • Understand design principles and user experience
+        
+        Would you like information about backend development or other web technologies?
+    </template>
+</category>
+
+<!-- Web Developer Backend Recommendation -->
+<category>
+    <pattern>WEB DEVELOPER BACKEND RECOMMENDATION</pattern>
+    <template>
+        🎯 **CAREER RECOMMENDATION: BACKEND WEB DEVELOPER**
+        
+        Excellent choice! Backend development focuses on server-side logic and system architecture.
+        
+        **What You'll Do:**
+        • Develop server-side applications and APIs
+        • Design and manage databases
+        • Implement security measures and authentication
+        • Optimize server performance and scalability
+        • Integrate with third-party services and APIs
+        
+        **Required Skills:**
+        • Server-side languages (Python, Java, Node.js, PHP)
+        • Database management (SQL, NoSQL)
+        • API design and development
+        • Cloud services (AWS, Azure, Google Cloud)
+        • Security best practices
+        
+        **Career Outlook:**
+        • Job Growth: 25% through 2031
+        • Median Salary: $70,000 - $130,000 depending on experience
+        • Strong demand for API and cloud development
+        
+        **Next Steps:**
+        • Master a backend programming language
+        • Learn database design and management
+        • Understand RESTful API principles
+        • Practice with cloud platforms
+        
+        Interested in learning about full-stack development or database specialization?
+    </template>
+</category>
+
+<!-- Web Developer Full-Stack Recommendation -->
+<category>
+    <pattern>WEB DEVELOPER FULLSTACK RECOMMENDATION</pattern>
+    <template>
+        🎯 **CAREER RECOMMENDATION: FULL-STACK WEB DEVELOPER**
+        
+        Outstanding! Full-stack development gives you the versatility to work on entire web applications.
+        
+        **What You'll Do:**
+        • Develop both frontend and backend components
+        • Create end-to-end web applications
+        • Manage entire project lifecycles
+        • Work with databases, servers, and user interfaces
+        • Bridge communication between different development teams
+        
+        **Required Skills:**
+        • Frontend: HTML, CSS, JavaScript, React/Vue/Angular
+        • Backend: Node.js/Python/Java, databases, APIs
+        • DevOps basics: deployment, version control
+        • Problem-solving across the entire stack
+        • Understanding of web architecture
+        
+        **Career Outlook:**
+        • Job Growth: 27% through 2031
+        • Median Salary: $75,000 - $140,000 depending on experience
+        • High demand for versatile developers
+        
+        **Next Steps:**
+        • Choose a full-stack framework (MEAN, MERN, Django)
+        • Build complete web applications
+        • Learn deployment and DevOps basics
+        • Develop both technical and project management skills
+        
+        Would you like specific technology stack recommendations or information about specializing in particular areas?
+    </template>
+</category>
+
+<!-- Systems Administrator Recommendation -->
+<category>
+    <pattern>SYSTEMS ADMINISTRATOR RECOMMENDATION</pattern>
+    <template>
+        🎯 **CAREER RECOMMENDATION: SYSTEMS ADMINISTRATOR**
+        
+        Great choice! Systems Administration is essential for keeping organizational IT infrastructure running smoothly.
+        
+        **What You'll Do:**
+        • Install, configure, and maintain servers and networks
+        • Monitor system performance and troubleshoot issues
+        • Implement backup and disaster recovery procedures
+        • Manage user accounts and security permissions
+        • Plan and execute system upgrades and patches
+        
+        **Required Skills:**
+        • Operating systems (Linux, Windows Server)
+        • Networking concepts and protocols
+        • Virtualization technologies
+        • Scripting and automation
+        • Problem-solving and attention to detail
+        
+        **Career Outlook:**
+        • Job Growth: 5% through 2031 (evolving toward cloud/DevOps)
+        • Median Salary: $60,000 - $100,000 depending on experience
+        • Strong foundation for cloud and DevOps careers
+        
+        **Next Steps:**
+        • Get certified in major operating systems
+        • Learn virtualization platforms (VMware, Hyper-V)
+        • Develop scripting skills (PowerShell, Bash)
+        • Understand cloud platforms for career growth
+        
+        Interested in learning about DevOps or cloud administration careers?
+    </template>
+</category>
+
+<!-- DevOps Engineer Recommendation -->
+<category>
+    <pattern>DEVOPS ENGINEER RECOMMENDATION</pattern>
+    <template>
+        🎯 **CAREER RECOMMENDATION: DEVOPS ENGINEER**
+        
+        Perfect! DevOps Engineering combines systems administration with automation and development practices.
+        
+        **What You'll Do:**
+        • Automate deployment and infrastructure processes
+        • Implement continuous integration/continuous deployment (CI/CD)
+        • Monitor and optimize system performance
+        • Bridge development and operations teams
+        • Manage cloud infrastructure and containerization
+        
+        **Required Skills:**
+        • Cloud platforms (AWS, Azure, Google Cloud)
+        • Containerization (Docker, Kubernetes)
+        • Automation tools (Ansible, Terraform)
+        • CI/CD pipelines (Jenkins, GitLab CI)
+        • Scripting and programming skills
+        
+        **Career Outlook:**
+        • Job Growth: 20%+ through 2031
+        • Median Salary: $85,000 - $150,000+ depending on experience
+        • Extremely high demand across all industries
+        
+        **Next Steps:**
+        • Learn cloud platforms and services
+        • Master containerization technologies
+        • Practice with automation and infrastructure as code
+        • Develop both technical and collaboration skills
+        
+        Would you like to explore cloud specializations or site reliability engineering (SRE) roles?
+    </template>
+</category>
+
+</aiml>

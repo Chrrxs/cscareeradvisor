@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+
+<!-- ============================================ -->
+<!-- MAIN ASSESSMENT AIML FILE -->
+<!-- Core conversation logic and assessment flow -->
+<!-- ============================================ -->
+
+<!-- Initial Greeting and Assessment Start -->
+<category>
+    <pattern>HELLO</pattern>
+    <template>
+        Hello! I'm your CS Career Advisor chatbot. I'm here to help you discover the perfect computing career path based on your interests and strengths.
+        
+        Would you like to:
+        1. START ASSESSMENT - Begin career guidance
+        2. LEARN ABOUT JOBS - Get information about specific computing careers
+        3. GET HELP - Learn how to use this chatbot
+        
+        Just type your choice!
+    </template>
+</category>
+
+<category>
+    <pattern>START ASSESSMENT</pattern>
+    <template>
+        Excellent! Let's find your ideal computing career. I'll ask you a few questions to understand your interests and strengths.
+        
+        First question: What aspects of computer science interest you most?
+        A) Creating applications and solving coding problems
+        B) Analyzing data and finding patterns
+        C) Protecting systems and preventing cyber threats
+        D) Building websites and user interfaces
+        E) Managing systems and infrastructure
+        
+        Please type the letter of your choice (A, B, C, D, or E).
+        <oob><set name="assessment_stage">interest_area</set></oob>
+    </template>
+</category>
+
+<!-- Interest Area Assessment -->
+<category>
+    <pattern>A</pattern>
+    <that>WHAT ASPECTS OF COMPUTER SCIENCE INTEREST YOU MOST</that>
+    <template>
+        <set name="primary_interest">software_development</set>
+        Great choice! Software development is a fantastic field. 
+        
+        Now, what's your experience level with programming?
+        1) Beginner - I know basic concepts
+        2) Intermediate - I can write functional programs
+        3) Advanced - I'm comfortable with complex projects and multiple languages
+        
+        Type 1, 2, or 3.
+    </template>
+</category>
+
+<category>
+    <pattern>B</pattern>
+    <that>WHAT ASPECTS OF COMPUTER SCIENCE INTEREST YOU MOST</that>
+    <template>
+        <set name="primary_interest">data_science</set>
+        Excellent! Data science is one of the fastest-growing fields in tech.
+        
+        How comfortable are you with mathematics and statistics?
+        1) Love it - Math is one of my strongest subjects
+        2) Okay with it - I can handle the math requirements
+        3) Prefer minimal math - I'd rather focus on other aspects
+        
+        Type 1, 2, or 3.
+    </template>
+</category>
+
+<category>
+    <pattern>C</pattern>
+    <that>WHAT ASPECTS OF COMPUTER SCIENCE INTEREST YOU MOST</that>
+    <template>
+        <set name="primary_interest">cybersecurity</set>
+        Perfect! Cybersecurity is critical in today's digital world.
+        
+        What motivates you most about security work?
+        1) Protecting people and organizations from threats
+        2) The technical challenge of finding vulnerabilities
+        3) The investigative aspect of incident response
+        
+        Type 1, 2, or 3.
+    </template>
+</category>
+
+<category>
+    <pattern>D</pattern>
+    <that>WHAT ASPECTS OF COMPUTER SCIENCE INTEREST YOU MOST</that>
+    <template>
+        <set name="primary_interest">web_development</set>
+        Wonderful! Web development combines technical skills with creativity.
+        
+        Which aspect appeals to you more?
+        1) Frontend - User interfaces, design, user experience
+        2) Backend - Server logic, databases, system architecture
+        3) Full-stack - Both frontend and backend development
+        
+        Type 1, 2, or 3.
+    </template>
+</category>
+
+<category>
+    <pattern>E</pattern>
+    <that>WHAT ASPECTS OF COMPUTER SCIENCE INTEREST YOU MOST</that>
+    <template>
+        <set name="primary_interest">systems_admin</set>
+        Excellent choice! Systems administration is the backbone of IT infrastructure.
+        
+        What interests you most about systems work?
+        1) Automating processes and improving efficiency
+        2) Troubleshooting and problem-solving
+        3) Large-scale system architecture and planning
+        
+        Type 1, 2, or 3.
+    </template>
+</category>
+
+<!-- Programming Experience Assessment -->
+<category>
+    <pattern>1</pattern>
+    <that>WHAT S YOUR EXPERIENCE LEVEL WITH PROGRAMMING</that>
+    <template>
+        <set name="programming_level">beginner</set>
+        <srai>SOFTWARE DEVELOPER RECOMMENDATION</srai>
+    </template>
+</category>
+
+<category>
+    <pattern>2</pattern>
+    <that>WHAT S YOUR EXPERIENCE LEVEL WITH PROGRAMMING</that>
+    <template>
+        <set name="programming_level">intermediate</set>
+        <srai>SOFTWARE DEVELOPER RECOMMENDATION</srai>
+    </template>
+</category>
+
+<category>
+    <pattern>3</pattern>
+    <that>WHAT S YOUR EXPERIENCE LEVEL WITH PROGRAMMING</that>
+    <template>
+        <set name="programming_level">advanced</set>
+        <srai>SOFTWARE DEVELOPER RECOMMENDATION</srai>
+    </template>
+</category>
+
+<!-- Math Comfort Assessment for Data Science -->
+<category>
+    <pattern>1</pattern>
+    <that>HOW COMFORTABLE ARE YOU WITH MATHEMATICS AND STATISTICS</that>
+    <template>
+        <set name="math_comfort">high</set>
+        <srai>DATA SCIENTIST RECOMMENDATION</srai>
+    </template>
+</category>
+
+<category>
+    <pattern>2</pattern>
+    <that>HOW COMFORTABLE ARE YOU WITH MATHEMATICS AND STATISTICS</that>
+    <template>
+        <set name="math_comfort">medium</set>
+        <srai>DATA ANALYST RECOMMENDATION</srai>
+    </template>
+</category>
+
+<category>
+    <pattern>3</pattern>
+    <that>HOW COMFORTABLE ARE YOU WITH MATHEMATICS AND STATISTICS</that>
+    <template>
+        <set name="math_comfort">low</set>
+        Based on your interest in data but preference for minimal math, you might enjoy roles that focus more on data visualization and business intelligence. Let me tell you about Data Analyst positions that require less advanced mathematics.
+        <srai>DATA ANALYST RECOMMENDATION</srai>
+    </template>
+</category>
+
+<!-- Security Motivation Assessment -->
+<category>
+    <pattern>1</pattern>
+    <that>WHAT MOTIVATES YOU MOST ABOUT SECURITY WORK</that>
+    <template>
+        <set name="security_motivation">protection</set>
+        <srai>CYBERSECURITY SPECIALIST RECOMMENDATION</srai>
+    </template>
+</category>
+
+<category>
+    <pattern>2</pattern>
+    <that>WHAT MOTIVATES YOU MOST ABOUT SECURITY WORK</that>
+    <template>
+        <set name="security_motivation">technical</set>
+        <srai>CYBERSECURITY SPECIALIST RECOMMENDATION</srai>
+    </template>
+</category>
+
+<category>
+    <pattern>3</pattern>
+    <that>WHAT MOTIVATES YOU MOST ABOUT SECURITY WORK</that>
+    <template>
+        <set name="security_motivation">investigation</set>
+        <srai>CYBERSECURITY SPECIALIST RECOMMENDATION</srai>
+    </template>
+</category>
+
+<!-- Web Development Preference Assessment -->
+<category>
+    <pattern>1</pattern>
+    <that>WHICH ASPECT APPEALS TO YOU MORE</that>
+    <template>
+        <set name="web_preference">frontend</set>
+        <srai>WEB DEVELOPER FRONTEND RECOMMENDATION</srai>
+    </template>
+</category>
+
+<category>
+    <pattern>2</pattern>
+    <that>WHICH ASPECT APPEALS TO YOU MORE</that>
+    <template>
+        <set name="web_preference">backend</set>
+        <srai>WEB DEVELOPER BACKEND RECOMMENDATION</srai>
+    </template>
+</category>
+
+<category>
+    <pattern>3</pattern>
+    <that>WHICH ASPECT APPEALS TO YOU MORE</that>
+    <template>
+        <set name="web_preference">fullstack</set>
+        <srai>WEB DEVELOPER FULLSTACK RECOMMENDATION</srai>
+    </template>
+</category>
+
+<!-- Systems Interest Assessment -->
+<category>
+    <pattern>1</pattern>
+    <that>WHAT INTERESTS YOU MOST ABOUT SYSTEMS WORK</that>
+    <template>
+        <set name="systems_interest">automation</set>
+        <srai>DEVOPS ENGINEER RECOMMENDATION</srai>
+    </template>
+</category>
+
+<category>
+    <pattern>2</pattern>
+    <that>WHAT INTERESTS YOU MOST ABOUT SYSTEMS WORK</that>
+    <template>
+        <set name="systems_interest">troubleshooting</set>
+        <srai>SYSTEMS ADMINISTRATOR RECOMMENDATION</srai>
+    </template>
+</category>
+
+<category>
+    <pattern>3</pattern>
+    <that>WHAT INTERESTS YOU MOST ABOUT SYSTEMS WORK</that>
+    <template>
+        <set name="systems_interest">architecture</set>
+        <srai>SYSTEMS ADMINISTRATOR RECOMMENDATION</srai>
+    </template>
+</category>
+
+<!-- Direct Career Access -->
+<category>
+    <pattern>SOFTWARE DEVELOPER</pattern>
+    <template>
+        <srai>SOFTWARE DEVELOPER RECOMMENDATION</srai>
+    </template>
+</category>
+
+<category>
+    <pattern>DATA SCIENTIST</pattern>
+    <template>
+        <srai>DATA SCIENTIST RECOMMENDATION</srai>
+    </template>
+</category>
+
+<category>
+    <pattern>CYBERSECURITY</pattern>
+    <template>
+        <srai>CYBERSECURITY SPECIALIST RECOMMENDATION</srai>
+    </template>
+</category>
+
+<category>
+    <pattern>WEB DEVELOPER</pattern>
+    <template>
+        Which type of web development interests you?
+        1) Frontend - User interfaces and user experience
+        2) Backend - Server logic and databases
+        3) Full-stack - Both frontend and backend
+        
+        Type 1, 2, or 3, or just say "ALL" for complete web development overview.
+    </template>
+</category>
+
+<category>
+    <pattern>ALL</pattern>
+    <that>WHICH TYPE OF WEB DEVELOPMENT INTERESTS YOU</that>
+    <template>
+        <srai>WEB DEVELOPER FRONTEND RECOMMENDATION</srai>
+        
+        ---
+        
+        <srai>WEB DEVELOPER BACKEND RECOMMENDATION</srai>
+        
+        ---
+        
+        <srai>WEB DEVELOPER FULLSTACK RECOMMENDATION</srai>
+    </template>
+</category>
+
+<category>
+    <pattern>SYSTEMS ADMIN</pattern>
+    <template>
+        <srai>SYSTEMS ADMINISTRATOR RECOMMENDATION</srai>
+    </template>
+</category>
+
+<category>
+    <pattern>DEVOPS</pattern>
+    <template>
+        <srai>DEVOPS ENGINEER RECOMMENDATION</srai>
+    </template>
+</category>
+
+<!-- Restart and Reset -->
+<category>
+    <pattern>RESTART</pattern>
+    <template>
+        <oob><set name="assessment_stage"></set></oob>
+        <oob><set name="primary_interest"></set></oob>
+        <oob><set name="programming_level"></set></oob>
+        <oob><set name="math_comfort"></set></oob>
+        <oob><set name="security_motivation"></set></oob>
+        <oob><set name="web_preference"></set></oob>
+        <oob><set name="systems_interest"></set></oob>
+        
+        Assessment reset! Let's start fresh.
+        
+        <srai>HELLO</srai>
+    </template>
+</category>
+
+<category>
+    <pattern>RESET</pattern>
+    <template>
+        <srai>RESTART</srai>
+    </template>
+</category>
+
+</aiml>
