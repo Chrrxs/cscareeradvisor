@@ -2,11 +2,11 @@
 <aiml version="1.0">
 
 <!-- ============================================ -->
-<!-- MAIN ASSESSMENT AIML FILE -->
-<!-- Core conversation logic and assessment flow -->
+<!-- CS CAREER ADVISOR CHATBOT - COMPLETE FILE -->
+<!-- Single file containing all functionality -->
 <!-- ============================================ -->
 
-<!-- Initial Greeting and Assessment Start -->
+<!-- Initial Greeting -->
 <category>
     <pattern>HELLO</pattern>
     <template>
@@ -22,330 +22,545 @@
 </category>
 
 <category>
+    <pattern>HI</pattern>
+    <template><srai>HELLO</srai></template>
+</category>
+
+<category>
+    <pattern>HEY</pattern>
+    <template><srai>HELLO</srai></template>
+</category>
+
+<!-- Assessment Start -->
+<category>
     <pattern>START ASSESSMENT</pattern>
     <template>
-        Excellent! Let's find your ideal computing career. I'll ask you a few questions to understand your interests and strengths.
+        Excellent! Let's find your ideal computing career. What interests you most about computer science?
         
-        First question: What aspects of computer science interest you most?
-        A) Creating applications and solving coding problems
-        B) Analyzing data and finding patterns
-        C) Protecting systems and preventing cyber threats
-        D) Building websites and user interfaces
-        E) Managing systems and infrastructure
+        Type one of these options:
+        • SOFTWARE - Creating applications and solving coding problems
+        • DATA - Analyzing data and finding patterns  
+        • SECURITY - Protecting systems from cyber threats
+        • WEB - Building websites and user interfaces
+        • SYSTEMS - Managing IT infrastructure and automation
         
-        Please type the letter of your choice (A, B, C, D, or E).
-        <oob><set name="assessment_stage">interest_area</set></oob>
+        Just type the keyword (SOFTWARE, DATA, SECURITY, WEB, or SYSTEMS)!
     </template>
 </category>
 
-<!-- Interest Area Assessment -->
 <category>
-    <pattern>A</pattern>
-    <that>WHAT ASPECTS OF COMPUTER SCIENCE INTEREST YOU MOST</that>
+    <pattern>START</pattern>
+    <template><srai>START ASSESSMENT</srai></template>
+</category>
+
+<category>
+    <pattern>BEGIN</pattern>
+    <template><srai>START ASSESSMENT</srai></template>
+</category>
+
+<!-- Direct Career Paths -->
+<category>
+    <pattern>SOFTWARE</pattern>
     <template>
-        <set name="primary_interest">software_development</set>
-        Great choice! Software development is a fantastic field. 
+        🎯 **CAREER RECOMMENDATION: SOFTWARE DEVELOPER/ENGINEER**
         
-        Now, what's your experience level with programming?
-        1) Beginner - I know basic concepts
-        2) Intermediate - I can write functional programs
-        3) Advanced - I'm comfortable with complex projects and multiple languages
+        Perfect choice! Software development is an excellent field for creating applications and solving coding problems.
         
-        Type 1, 2, or 3.
-    </template>
-</category>
-
-<category>
-    <pattern>B</pattern>
-    <that>WHAT ASPECTS OF COMPUTER SCIENCE INTEREST YOU MOST</that>
-    <template>
-        <set name="primary_interest">data_science</set>
-        Excellent! Data science is one of the fastest-growing fields in tech.
+        **What You'll Do:**
+        • Design and develop software applications
+        • Write, test, and maintain code
+        • Collaborate with teams to solve complex problems
+        • Work with various programming languages and frameworks
+        • Debug and optimize applications for performance
         
-        How comfortable are you with mathematics and statistics?
-        1) Love it - Math is one of my strongest subjects
-        2) Okay with it - I can handle the math requirements
-        3) Prefer minimal math - I'd rather focus on other aspects
+        **Required Skills:**
+        • Proficiency in programming languages (Java, Python, C++, JavaScript)
+        • Problem-solving and analytical thinking
+        • Understanding of software development methodologies
+        • Version control systems (Git)
+        • Database knowledge
         
-        Type 1, 2, or 3.
-    </template>
-</category>
-
-<category>
-    <pattern>C</pattern>
-    <that>WHAT ASPECTS OF COMPUTER SCIENCE INTEREST YOU MOST</that>
-    <template>
-        <set name="primary_interest">cybersecurity</set>
-        Perfect! Cybersecurity is critical in today's digital world.
+        **Career Outlook:**
+        • Job Growth: 25% through 2031 (much faster than average)
+        • Median Salary: $70,000 - $150,000+ depending on experience and location
+        • High demand across all industries
         
-        What motivates you most about security work?
-        1) Protecting people and organizations from threats
-        2) The technical challenge of finding vulnerabilities
-        3) The investigative aspect of incident response
+        **Next Steps:**
+        • Build a portfolio of projects
+        • Learn popular frameworks and libraries
+        • Consider specializing in mobile, web, or desktop development
+        • Practice coding challenges and algorithms
         
-        Type 1, 2, or 3.
+        Would you like to explore other career paths? Type "LEARN ABOUT JOBS" or try another assessment with "START ASSESSMENT"!
     </template>
 </category>
 
 <category>
-    <pattern>D</pattern>
-    <that>WHAT ASPECTS OF COMPUTER SCIENCE INTEREST YOU MOST</that>
+    <pattern>DATA</pattern>
     <template>
-        <set name="primary_interest">web_development</set>
-        Wonderful! Web development combines technical skills with creativity.
+        🎯 **CAREER RECOMMENDATION: DATA SCIENTIST/ANALYST**
         
-        Which aspect appeals to you more?
-        1) Frontend - User interfaces, design, user experience
-        2) Backend - Server logic, databases, system architecture
-        3) Full-stack - Both frontend and backend development
+        Excellent choice! Data science is one of the fastest-growing fields in technology.
         
-        Type 1, 2, or 3.
-    </template>
-</category>
-
-<category>
-    <pattern>E</pattern>
-    <that>WHAT ASPECTS OF COMPUTER SCIENCE INTEREST YOU MOST</that>
-    <template>
-        <set name="primary_interest">systems_admin</set>
-        Excellent choice! Systems administration is the backbone of IT infrastructure.
+        **What You'll Do:**
+        • Analyze large datasets to extract meaningful insights
+        • Build predictive models and machine learning algorithms
+        • Create data visualizations and reports
+        • Work with stakeholders to solve business problems
+        • Design and conduct experiments
         
-        What interests you most about systems work?
-        1) Automating processes and improving efficiency
-        2) Troubleshooting and problem-solving
-        3) Large-scale system architecture and planning
+        **Required Skills:**
+        • Programming languages (Python, R, SQL)
+        • Statistics and mathematics
+        • Machine learning and AI techniques
+        • Data visualization tools (Tableau, PowerBI)
+        • Critical thinking and business acumen
         
-        Type 1, 2, or 3.
-    </template>
-</category>
-
-<!-- Programming Experience Assessment -->
-<category>
-    <pattern>1</pattern>
-    <that>WHAT S YOUR EXPERIENCE LEVEL WITH PROGRAMMING</that>
-    <template>
-        <set name="programming_level">beginner</set>
-        <srai>SOFTWARE DEVELOPER RECOMMENDATION</srai>
-    </template>
-</category>
-
-<category>
-    <pattern>2</pattern>
-    <that>WHAT S YOUR EXPERIENCE LEVEL WITH PROGRAMMING</that>
-    <template>
-        <set name="programming_level">intermediate</set>
-        <srai>SOFTWARE DEVELOPER RECOMMENDATION</srai>
+        **Career Outlook:**
+        • Job Growth: 36% through 2031 (much faster than average)
+        • Median Salary: $80,000 - $180,000+ depending on experience
+        • High demand across healthcare, finance, tech, and retail
+        
+        **Career Variations:**
+        • **Data Scientist** - Advanced analytics, machine learning, research (higher math requirements)
+        • **Data Analyst** - Business intelligence, reporting, visualization (moderate math requirements)
+        
+        **Next Steps:**
+        • Master Python/R and SQL
+        • Learn machine learning libraries (scikit-learn, TensorFlow)
+        • Work on data science projects and build a portfolio
+        • Consider earning certifications in cloud platforms (AWS, Azure)
+        
+        Want to explore other career paths? Type "LEARN ABOUT JOBS" or restart with "START ASSESSMENT"!
     </template>
 </category>
 
 <category>
-    <pattern>3</pattern>
-    <that>WHAT S YOUR EXPERIENCE LEVEL WITH PROGRAMMING</that>
+    <pattern>SECURITY</pattern>
     <template>
-        <set name="programming_level">advanced</set>
-        <srai>SOFTWARE DEVELOPER RECOMMENDATION</srai>
-    </template>
-</category>
-
-<!-- Math Comfort Assessment for Data Science -->
-<category>
-    <pattern>1</pattern>
-    <that>HOW COMFORTABLE ARE YOU WITH MATHEMATICS AND STATISTICS</that>
-    <template>
-        <set name="math_comfort">high</set>
-        <srai>DATA SCIENTIST RECOMMENDATION</srai>
-    </template>
-</category>
-
-<category>
-    <pattern>2</pattern>
-    <that>HOW COMFORTABLE ARE YOU WITH MATHEMATICS AND STATISTICS</that>
-    <template>
-        <set name="math_comfort">medium</set>
-        <srai>DATA ANALYST RECOMMENDATION</srai>
-    </template>
-</category>
-
-<category>
-    <pattern>3</pattern>
-    <that>HOW COMFORTABLE ARE YOU WITH MATHEMATICS AND STATISTICS</that>
-    <template>
-        <set name="math_comfort">low</set>
-        Based on your interest in data but preference for minimal math, you might enjoy roles that focus more on data visualization and business intelligence. Let me tell you about Data Analyst positions that require less advanced mathematics.
-        <srai>DATA ANALYST RECOMMENDATION</srai>
-    </template>
-</category>
-
-<!-- Security Motivation Assessment -->
-<category>
-    <pattern>1</pattern>
-    <that>WHAT MOTIVATES YOU MOST ABOUT SECURITY WORK</that>
-    <template>
-        <set name="security_motivation">protection</set>
-        <srai>CYBERSECURITY SPECIALIST RECOMMENDATION</srai>
+        🎯 **CAREER RECOMMENDATION: CYBERSECURITY SPECIALIST**
+        
+        Outstanding choice! Cybersecurity is one of the most critical and fastest-growing fields in technology.
+        
+        **What You'll Do:**
+        • Monitor and protect computer systems from security threats
+        • Conduct security assessments and vulnerability testing
+        • Implement security measures and protocols
+        • Investigate security incidents and breaches
+        • Develop security policies and procedures
+        
+        **Required Skills:**
+        • Network security and protocols
+        • Security tools and technologies
+        • Risk assessment and management
+        • Incident response procedures
+        • Strong analytical and problem-solving skills
+        
+        **Career Outlook:**
+        • Job Growth: 35% through 2031 (much faster than average)
+        • Median Salary: $75,000 - $160,000+ depending on specialization
+        • Critical shortage of qualified professionals
+        
+        **Specialization Areas:**
+        • Network Security - Protecting network infrastructure
+        • Ethical Hacking/Penetration Testing - Finding vulnerabilities
+        • Digital Forensics - Investigating security incidents
+        • Security Compliance - Ensuring regulatory compliance
+        • Cloud Security - Securing cloud environments
+        
+        **Next Steps:**
+        • Earn security certifications (CompTIA Security+, CISSP)
+        • Practice with security tools and labs
+        • Learn about different attack vectors and defenses
+        • Consider specializing in a specific security domain
+        
+        Ready to explore other options? Type "LEARN ABOUT JOBS" or "START ASSESSMENT"!
     </template>
 </category>
 
 <category>
-    <pattern>2</pattern>
-    <that>WHAT MOTIVATES YOU MOST ABOUT SECURITY WORK</that>
+    <pattern>WEB</pattern>
     <template>
-        <set name="security_motivation">technical</set>
-        <srai>CYBERSECURITY SPECIALIST RECOMMENDATION</srai>
+        🎯 **CAREER RECOMMENDATION: WEB DEVELOPER**
+        
+        Great choice! Web development combines technical skills with creativity and offers multiple specialization paths.
+        
+        **Three Main Specializations:**
+        
+        **Frontend Developer:**
+        • Create user interfaces and user experiences
+        • Work with HTML, CSS, JavaScript, React/Vue/Angular
+        • Focus on design, usability, and browser compatibility
+        • Salary: $60,000 - $120,000+
+        
+        **Backend Developer:**
+        • Develop server-side applications and APIs
+        • Work with Python/Java/Node.js, databases, cloud services
+        • Focus on data processing, security, and system architecture
+        • Salary: $70,000 - $130,000+
+        
+        **Full-Stack Developer:**
+        • Handle both frontend and backend development
+        • Versatile skill set across entire web application stack
+        • Manage complete project lifecycles
+        • Salary: $75,000 - $140,000+
+        
+        **Common Requirements:**
+        • Programming fundamentals
+        • Version control (Git)
+        • Problem-solving skills
+        • Understanding of web technologies
+        
+        **Career Outlook:**
+        • Job Growth: 23-27% through 2031
+        • High demand for responsive, mobile-first development
+        • Strong freelance and remote work opportunities
+        
+        **Next Steps:**
+        • Choose a specialization (frontend, backend, or full-stack)
+        • Build a portfolio of web projects
+        • Learn modern frameworks and tools
+        • Practice with real-world projects
+        
+        Interested in other careers? Type "LEARN ABOUT JOBS" or "START ASSESSMENT"!
     </template>
 </category>
 
 <category>
-    <pattern>3</pattern>
-    <that>WHAT MOTIVATES YOU MOST ABOUT SECURITY WORK</that>
+    <pattern>SYSTEMS</pattern>
     <template>
-        <set name="security_motivation">investigation</set>
-        <srai>CYBERSECURITY SPECIALIST RECOMMENDATION</srai>
-    </template>
-</category>
-
-<!-- Web Development Preference Assessment -->
-<category>
-    <pattern>1</pattern>
-    <that>WHICH ASPECT APPEALS TO YOU MORE</that>
-    <template>
-        <set name="web_preference">frontend</set>
-        <srai>WEB DEVELOPER FRONTEND RECOMMENDATION</srai>
-    </template>
-</category>
-
-<category>
-    <pattern>2</pattern>
-    <that>WHICH ASPECT APPEALS TO YOU MORE</that>
-    <template>
-        <set name="web_preference">backend</set>
-        <srai>WEB DEVELOPER BACKEND RECOMMENDATION</srai>
-    </template>
-</category>
-
-<category>
-    <pattern>3</pattern>
-    <that>WHICH ASPECT APPEALS TO YOU MORE</that>
-    <template>
-        <set name="web_preference">fullstack</set>
-        <srai>WEB DEVELOPER FULLSTACK RECOMMENDATION</srai>
-    </template>
-</category>
-
-<!-- Systems Interest Assessment -->
-<category>
-    <pattern>1</pattern>
-    <that>WHAT INTERESTS YOU MOST ABOUT SYSTEMS WORK</that>
-    <template>
-        <set name="systems_interest">automation</set>
-        <srai>DEVOPS ENGINEER RECOMMENDATION</srai>
-    </template>
-</category>
-
-<category>
-    <pattern>2</pattern>
-    <that>WHAT INTERESTS YOU MOST ABOUT SYSTEMS WORK</that>
-    <template>
-        <set name="systems_interest">troubleshooting</set>
-        <srai>SYSTEMS ADMINISTRATOR RECOMMENDATION</srai>
-    </template>
-</category>
-
-<category>
-    <pattern>3</pattern>
-    <that>WHAT INTERESTS YOU MOST ABOUT SYSTEMS WORK</that>
-    <template>
-        <set name="systems_interest">architecture</set>
-        <srai>SYSTEMS ADMINISTRATOR RECOMMENDATION</srai>
+        🎯 **CAREER RECOMMENDATION: SYSTEMS ADMINISTRATOR/DEVOPS ENGINEER**
+        
+        Excellent choice! Systems work is the backbone of all IT operations with two main career paths.
+        
+        **Systems Administrator:**
+        • Install, configure, and maintain servers and networks
+        • Monitor system performance and troubleshoot issues
+        • Implement backup and disaster recovery procedures
+        • Manage user accounts and security permissions
+        • Plan and execute system upgrades and patches
+        • Salary: $60,000 - $100,000+
+        • Job Growth: 5% (evolving toward cloud/DevOps)
+        
+        **DevOps Engineer:**
+        • Automate deployment and infrastructure processes
+        • Implement CI/CD pipelines and containerization
+        • Monitor and optimize system performance
+        • Bridge development and operations teams
+        • Manage cloud infrastructure (AWS, Azure, Google Cloud)
+        • Salary: $85,000 - $150,000+
+        • Job Growth: 20%+ (extremely high demand)
+        
+        **Required Skills:**
+        • Operating systems (Linux, Windows Server)
+        • Cloud platforms and services
+        • Scripting and automation (Python, Bash, PowerShell)
+        • Networking concepts and protocols
+        • Problem-solving and attention to detail
+        
+        **Next Steps:**
+        • Get certified in major operating systems and cloud platforms
+        • Learn containerization (Docker, Kubernetes)
+        • Practice with automation tools (Ansible, Terraform)
+        • Develop both technical and collaboration skills
+        
+        Want to explore other career options? Type "LEARN ABOUT JOBS" or "START ASSESSMENT"!
     </template>
 </category>
 
 <!-- Direct Career Access -->
 <category>
     <pattern>SOFTWARE DEVELOPER</pattern>
-    <template>
-        <srai>SOFTWARE DEVELOPER RECOMMENDATION</srai>
-    </template>
+    <template><srai>SOFTWARE</srai></template>
 </category>
 
 <category>
     <pattern>DATA SCIENTIST</pattern>
-    <template>
-        <srai>DATA SCIENTIST RECOMMENDATION</srai>
-    </template>
+    <template><srai>DATA</srai></template>
+</category>
+
+<category>
+    <pattern>DATA ANALYST</pattern>
+    <template><srai>DATA</srai></template>
 </category>
 
 <category>
     <pattern>CYBERSECURITY</pattern>
-    <template>
-        <srai>CYBERSECURITY SPECIALIST RECOMMENDATION</srai>
-    </template>
+    <template><srai>SECURITY</srai></template>
 </category>
 
 <category>
     <pattern>WEB DEVELOPER</pattern>
-    <template>
-        Which type of web development interests you?
-        1) Frontend - User interfaces and user experience
-        2) Backend - Server logic and databases
-        3) Full-stack - Both frontend and backend
-        
-        Type 1, 2, or 3, or just say "ALL" for complete web development overview.
-    </template>
-</category>
-
-<category>
-    <pattern>ALL</pattern>
-    <that>WHICH TYPE OF WEB DEVELOPMENT INTERESTS YOU</that>
-    <template>
-        <srai>WEB DEVELOPER FRONTEND RECOMMENDATION</srai>
-        
-        ---
-        
-        <srai>WEB DEVELOPER BACKEND RECOMMENDATION</srai>
-        
-        ---
-        
-        <srai>WEB DEVELOPER FULLSTACK RECOMMENDATION</srai>
-    </template>
+    <template><srai>WEB</srai></template>
 </category>
 
 <category>
     <pattern>SYSTEMS ADMIN</pattern>
-    <template>
-        <srai>SYSTEMS ADMINISTRATOR RECOMMENDATION</srai>
-    </template>
+    <template><srai>SYSTEMS</srai></template>
 </category>
 
 <category>
     <pattern>DEVOPS</pattern>
+    <template><srai>SYSTEMS</srai></template>
+</category>
+
+<!-- Job Information -->
+<category>
+    <pattern>LEARN ABOUT JOBS</pattern>
     <template>
-        <srai>DEVOPS ENGINEER RECOMMENDATION</srai>
+        Here are the 5 computing careers I can help you explore:
+        
+        **1. SOFTWARE** - Software Developer/Engineer
+        Create applications, solve coding problems, work with programming languages
+        
+        **2. DATA** - Data Scientist/Analyst  
+        Analyze data, build models, extract business insights
+        
+        **3. SECURITY** - Cybersecurity Specialist
+        Protect systems, prevent cyber threats, investigate incidents
+        
+        **4. WEB** - Web Developer (Frontend/Backend/Full-Stack)
+        Build websites, create user interfaces, develop web applications
+        
+        **5. SYSTEMS** - Systems Administrator/DevOps Engineer
+        Manage IT infrastructure, automate processes, maintain servers
+        
+        Type any keyword (SOFTWARE, DATA, SECURITY, WEB, SYSTEMS) to learn more, or type "START ASSESSMENT" for personalized recommendations!
     </template>
 </category>
 
-<!-- Restart and Reset -->
+<category>
+    <pattern>JOBS</pattern>
+    <template><srai>LEARN ABOUT JOBS</srai></template>
+</category>
+
+<category>
+    <pattern>CAREERS</pattern>
+    <template><srai>LEARN ABOUT JOBS</srai></template>
+</category>
+
+<!-- Salary Information -->
+<category>
+    <pattern>SALARY</pattern>
+    <template>
+        **Computing Career Salary Ranges:**
+        
+        💰 **Software Developer:** $70,000 - $150,000+
+        💰 **Data Scientist:** $80,000 - $180,000+  
+        💰 **Cybersecurity Specialist:** $75,000 - $160,000+
+        💰 **Web Developer:** $60,000 - $130,000+
+        💰 **Systems Admin/DevOps:** $60,000 - $150,000+
+        
+        **Factors Affecting Salary:**
+        • Experience level and skills
+        • Geographic location
+        • Company size and industry
+        • Specific specializations
+        • Education and certifications
+        
+        For detailed info about a specific role, type the career name (e.g., "DATA SCIENTIST").
+        
+        Want to explore career options? Type "LEARN ABOUT JOBS" or "START ASSESSMENT"!
+    </template>
+</category>
+
+<!-- Job Market Information -->
+<category>
+    <pattern>JOB MARKET</pattern>
+    <template>
+        **Current Computing Job Market Outlook:**
+        
+        📈 **Highest Growth Areas:**
+        1. **Data Science** - 36% growth through 2031
+        2. **Cybersecurity** - 35% growth through 2031  
+        3. **Web Development** - 23-27% growth through 2031
+        4. **Software Development** - 25% growth through 2031
+        5. **DevOps Engineering** - 20%+ growth through 2031
+        
+        🔥 **Hot Skills in Demand:**
+        • Python, JavaScript, Java programming
+        • Cloud platforms (AWS, Azure, Google Cloud)
+        • Data analysis and machine learning
+        • Cybersecurity and compliance
+        • DevOps and automation tools
+        
+        💼 **Key Industry Trends:**
+        • Remote work opportunities expanding
+        • AI/Machine Learning expertise increasingly valuable
+        • Cloud computing skills critical
+        • Cybersecurity essential across all industries
+        • Full-stack and versatile developers in high demand
+        
+        Ready to find your path? Type "START ASSESSMENT" or "LEARN ABOUT JOBS"!
+    </template>
+</category>
+
+<!-- Help and About -->
+<category>
+    <pattern>HELP</pattern>
+    <template>
+        **How to Use the CS Career Advisor Chatbot:**
+        
+        🚀 **Getting Started:**
+        • Type "START ASSESSMENT" - Get personalized career recommendations
+        • Type "LEARN ABOUT JOBS" - Explore all 5 career options
+        
+        💼 **Direct Career Information:**
+        • "SOFTWARE" - Software development careers
+        • "DATA" - Data science and analytics
+        • "SECURITY" - Cybersecurity roles
+        • "WEB" - Web development options
+        • "SYSTEMS" - IT infrastructure and DevOps
+        
+        📊 **Additional Information:**
+        • "SALARY" - Salary ranges for computing careers
+        • "JOB MARKET" - Current industry outlook and trends
+        • "EXAMPLES" - See sample conversations
+        
+        ❓ **Need More Help:**
+        • Type "ABOUT" to learn about this chatbot
+        • Type "EXAMPLES" for conversation samples
+        
+        Ready to explore your career options? Type "START ASSESSMENT" to begin!
+    </template>
+</category>
+
+<category>
+    <pattern>ABOUT</pattern>
+    <template>
+        **CS Career Advisor Chatbot**
+        
+        🎯 **My Purpose:**
+        I help computer science students discover suitable career paths based on their interests and strengths.
+        
+        🤖 **My Capabilities:**
+        • Provide personalized career recommendations
+        • Offer detailed information about 5 major computing fields
+        • Share salary ranges and job market insights
+        • Give next steps and career development advice
+        
+        💼 **Career Areas I Cover:**
+        1. **Software Development/Engineering** - Application development
+        2. **Data Science/Analytics** - Data analysis and machine learning  
+        3. **Cybersecurity** - System protection and security
+        4. **Web Development** - Website and web application creation
+        5. **Systems Administration/DevOps** - IT infrastructure management
+        
+        🚀 **How I Work:**
+        I use simple keyword responses to match you with career information, making it easy to explore different paths and find what interests you most.
+        
+        Ready to start? Type "START ASSESSMENT" or "LEARN ABOUT JOBS"!
+    </template>
+</category>
+
+<category>
+    <pattern>EXAMPLES</pattern>
+    <template>
+        **Sample Conversation Examples:**
+        
+        **Example 1 - Quick Career Info:**
+        You: "SOFTWARE"
+        Me: [Provides detailed Software Developer information]
+        
+        **Example 2 - Assessment Flow:**
+        You: "START ASSESSMENT"
+        Me: [Asks about interests with keyword options]
+        You: "DATA" 
+        Me: [Provides Data Science career recommendation]
+        
+        **Example 3 - Salary Research:**
+        You: "SALARY"
+        Me: [Shows salary ranges for all careers]
+        You: "SECURITY"
+        Me: [Provides Cybersecurity career details]
+        
+        **Quick Commands to Try:**
+        • "START ASSESSMENT" - Personalized recommendations
+        • "WEB" - Web development info
+        • "JOB MARKET" - Industry trends
+        • "HELP" - Usage instructions
+        
+        Try starting your own exploration with "START ASSESSMENT"!
+    </template>
+</category>
+
+<!-- Thank You and Feedback -->
+<category>
+    <pattern>THANK YOU</pattern>
+    <template>
+        You're very welcome! I'm glad I could help you explore computing career options. 
+        
+        Remember: Your career path can evolve over time, so keep learning and exploring new opportunities!
+        
+        🚀 **Keep Exploring:**
+        • Try "START ASSESSMENT" for another evaluation
+        • Type "LEARN ABOUT JOBS" to explore different careers
+        • Use "JOB MARKET" to stay updated on trends
+        
+        Best of luck with your career journey in computer science! 🎓
+    </template>
+</category>
+
+<category>
+    <pattern>THANKS</pattern>
+    <template><srai>THANK YOU</srai></template>
+</category>
+
+<!-- Goodbye -->
+<category>
+    <pattern>BYE</pattern>
+    <template>
+        Goodbye! Best of luck with your career exploration in computer science. 
+        
+        Remember: The perfect career is out there waiting for you - keep exploring and learning!
+        
+        Come back anytime you need career guidance. Take care! 🎓✨
+    </template>
+</category>
+
+<category>
+    <pattern>GOODBYE</pattern>
+    <template><srai>BYE</srai></template>
+</category>
+
+<!-- Restart -->
 <category>
     <pattern>RESTART</pattern>
     <template>
-        <oob><set name="assessment_stage"></set></oob>
-        <oob><set name="primary_interest"></set></oob>
-        <oob><set name="programming_level"></set></oob>
-        <oob><set name="math_comfort"></set></oob>
-        <oob><set name="security_motivation"></set></oob>
-        <oob><set name="web_preference"></set></oob>
-        <oob><set name="systems_interest"></set></oob>
-        
         Assessment reset! Let's start fresh.
-        
         <srai>HELLO</srai>
     </template>
 </category>
 
 <category>
     <pattern>RESET</pattern>
+    <template><srai>RESTART</srai></template>
+</category>
+
+<!-- Error Handling -->
+<category>
+    <pattern>*</pattern>
     <template>
-        <srai>RESTART</srai>
+        I'm not sure I understand that. Here are some things you can try:
+        
+        🚀 **To Get Started:**
+        • "START ASSESSMENT" - Personalized career guidance
+        • "LEARN ABOUT JOBS" - Explore all career options
+        • "HELP" - See all available commands
+        
+        💼 **For Career Information:**
+        • "SOFTWARE" - Application development
+        • "DATA" - Data science and analytics  
+        • "SECURITY" - Cybersecurity roles
+        • "WEB" - Web development
+        • "SYSTEMS" - IT infrastructure and DevOps
+        
+        📊 **Other Helpful Commands:**
+        • "SALARY" - Salary information
+        • "JOB MARKET" - Industry outlook
+        • "EXAMPLES" - Sample conversations
+        
+        What would you like to explore?
     </template>
 </category>
 
