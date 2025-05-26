@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <aiml version="1.0">
 
 <!-- ============================================ -->
@@ -62,30 +61,30 @@
 <category>
     <pattern>SOFTWARE</pattern>
     <template>
-        🎯 **CAREER RECOMMENDATION: SOFTWARE DEVELOPER/ENGINEER**
+        CAREER RECOMMENDATION: SOFTWARE DEVELOPER/ENGINEER
         
         Perfect choice! Software development is an excellent field for creating applications and solving coding problems.
         
-        **What You'll Do:**
+        What You'll Do:
         • Design and develop software applications
         • Write, test, and maintain code
         • Collaborate with teams to solve complex problems
         • Work with various programming languages and frameworks
         • Debug and optimize applications for performance
         
-        **Required Skills:**
+        Required Skills:
         • Proficiency in programming languages (Java, Python, C++, JavaScript)
         • Problem-solving and analytical thinking
         • Understanding of software development methodologies
         • Version control systems (Git)
         • Database knowledge
         
-        **Career Outlook:**
+        Career Outlook:
         • Job Growth: 25% through 2031 (much faster than average)
         • Median Salary: $70,000 - $150,000+ depending on experience and location
         • High demand across all industries
         
-        **Next Steps:**
+        Next Steps:
         • Build a portfolio of projects
         • Learn popular frameworks and libraries
         • Consider specializing in mobile, web, or desktop development
@@ -98,34 +97,34 @@
 <category>
     <pattern>DATA</pattern>
     <template>
-        🎯 **CAREER RECOMMENDATION: DATA SCIENTIST/ANALYST**
+        CAREER RECOMMENDATION: DATA SCIENTIST/ANALYST
         
         Excellent choice! Data science is one of the fastest-growing fields in technology.
         
-        **What You'll Do:**
+        What You'll Do:
         • Analyze large datasets to extract meaningful insights
         • Build predictive models and machine learning algorithms
         • Create data visualizations and reports
         • Work with stakeholders to solve business problems
         • Design and conduct experiments
         
-        **Required Skills:**
+        Required Skills:
         • Programming languages (Python, R, SQL)
         • Statistics and mathematics
         • Machine learning and AI techniques
         • Data visualization tools (Tableau, PowerBI)
         • Critical thinking and business acumen
         
-        **Career Outlook:**
+        Career Outlook:
         • Job Growth: 36% through 2031 (much faster than average)
         • Median Salary: $80,000 - $180,000+ depending on experience
         • High demand across healthcare, finance, tech, and retail
         
-        **Career Variations:**
-        • **Data Scientist** - Advanced analytics, machine learning, research (higher math requirements)
-        • **Data Analyst** - Business intelligence, reporting, visualization (moderate math requirements)
+        Career Variations:
+        • Data Scientist - Advanced analytics, machine learning, research (higher math requirements)
+        • Data Analyst - Business intelligence, reporting, visualization (moderate math requirements)
         
-        **Next Steps:**
+        Next Steps:
         • Master Python/R and SQL
         • Learn machine learning libraries (scikit-learn, TensorFlow)
         • Work on data science projects and build a portfolio
@@ -138,37 +137,37 @@
 <category>
     <pattern>SECURITY</pattern>
     <template>
-        🎯 **CAREER RECOMMENDATION: CYBERSECURITY SPECIALIST**
+        CAREER RECOMMENDATION: CYBERSECURITY SPECIALIST
         
         Outstanding choice! Cybersecurity is one of the most critical and fastest-growing fields in technology.
         
-        **What You'll Do:**
+        What You'll Do:
         • Monitor and protect computer systems from security threats
         • Conduct security assessments and vulnerability testing
         • Implement security measures and protocols
         • Investigate security incidents and breaches
         • Develop security policies and procedures
         
-        **Required Skills:**
+        Required Skills:
         • Network security and protocols
         • Security tools and technologies
         • Risk assessment and management
         • Incident response procedures
         • Strong analytical and problem-solving skills
         
-        **Career Outlook:**
+        Career Outlook:
         • Job Growth: 35% through 2031 (much faster than average)
         • Median Salary: $75,000 - $160,000+ depending on specialization
         • Critical shortage of qualified professionals
         
-        **Specialization Areas:**
+        Specialization Areas:
         • Network Security - Protecting network infrastructure
         • Ethical Hacking/Penetration Testing - Finding vulnerabilities
         • Digital Forensics - Investigating security incidents
         • Security Compliance - Ensuring regulatory compliance
         • Cloud Security - Securing cloud environments
         
-        **Next Steps:**
+        Next Steps:
         • Earn security certifications (CompTIA Security+, CISSP)
         • Practice with security tools and labs
         • Learn about different attack vectors and defenses
@@ -181,42 +180,42 @@
 <category>
     <pattern>WEB</pattern>
     <template>
-        🎯 **CAREER RECOMMENDATION: WEB DEVELOPER**
+        CAREER RECOMMENDATION: WEB DEVELOPER
         
         Great choice! Web development combines technical skills with creativity and offers multiple specialization paths.
         
-        **Three Main Specializations:**
+        Three Main Specializations:
         
-        **Frontend Developer:**
+        Frontend Developer:
         • Create user interfaces and user experiences
         • Work with HTML, CSS, JavaScript, React/Vue/Angular
         • Focus on design, usability, and browser compatibility
         • Salary: $60,000 - $120,000+
         
-        **Backend Developer:**
+        Backend Developer:
         • Develop server-side applications and APIs
         • Work with Python/Java/Node.js, databases, cloud services
         • Focus on data processing, security, and system architecture
         • Salary: $70,000 - $130,000+
         
-        **Full-Stack Developer:**
+        Full-Stack Developer:
         • Handle both frontend and backend development
         • Versatile skill set across entire web application stack
         • Manage complete project lifecycles
         • Salary: $75,000 - $140,000+
         
-        **Common Requirements:**
+        Common Requirements:
         • Programming fundamentals
         • Version control (Git)
         • Problem-solving skills
         • Understanding of web technologies
         
-        **Career Outlook:**
+        Career Outlook:
         • Job Growth: 23-27% through 2031
         • High demand for responsive, mobile-first development
         • Strong freelance and remote work opportunities
         
-        **Next Steps:**
+        Next Steps:
         • Choose a specialization (frontend, backend, or full-stack)
         • Build a portfolio of web projects
         • Learn modern frameworks and tools
@@ -229,11 +228,11 @@
 <category>
     <pattern>SYSTEMS</pattern>
     <template>
-        🎯 **CAREER RECOMMENDATION: SYSTEMS ADMINISTRATOR/DEVOPS ENGINEER**
+        CAREER RECOMMENDATION: SYSTEMS ADMINISTRATOR/DEVOPS ENGINEER
         
         Excellent choice! Systems work is the backbone of all IT operations with two main career paths.
         
-        **Systems Administrator:**
+        Systems Administrator:
         • Install, configure, and maintain servers and networks
         • Monitor system performance and troubleshoot issues
         • Implement backup and disaster recovery procedures
@@ -242,7 +241,7 @@
         • Salary: $60,000 - $100,000+
         • Job Growth: 5% (evolving toward cloud/DevOps)
         
-        **DevOps Engineer:**
+        DevOps Engineer:
         • Automate deployment and infrastructure processes
         • Implement CI/CD pipelines and containerization
         • Monitor and optimize system performance
@@ -251,14 +250,14 @@
         • Salary: $85,000 - $150,000+
         • Job Growth: 20%+ (extremely high demand)
         
-        **Required Skills:**
+        Required Skills:
         • Operating systems (Linux, Windows Server)
         • Cloud platforms and services
         • Scripting and automation (Python, Bash, PowerShell)
         • Networking concepts and protocols
         • Problem-solving and attention to detail
         
-        **Next Steps:**
+        Next Steps:
         • Get certified in major operating systems and cloud platforms
         • Learn containerization (Docker, Kubernetes)
         • Practice with automation tools (Ansible, Terraform)
@@ -310,19 +309,19 @@
     <template>
         Here are the 5 computing careers I can help you explore:
         
-        **1. SOFTWARE** - Software Developer/Engineer
+        1. SOFTWARE - Software Developer/Engineer
         Create applications, solve coding problems, work with programming languages
         
-        **2. DATA** - Data Scientist/Analyst  
+        2. DATA - Data Scientist/Analyst  
         Analyze data, build models, extract business insights
         
-        **3. SECURITY** - Cybersecurity Specialist
+        3. SECURITY - Cybersecurity Specialist
         Protect systems, prevent cyber threats, investigate incidents
         
-        **4. WEB** - Web Developer (Frontend/Backend/Full-Stack)
+        4. WEB - Web Developer (Frontend/Backend/Full-Stack)
         Build websites, create user interfaces, develop web applications
         
-        **5. SYSTEMS** - Systems Administrator/DevOps Engineer
+        5. SYSTEMS - Systems Administrator/DevOps Engineer
         Manage IT infrastructure, automate processes, maintain servers
         
         Type any keyword (SOFTWARE, DATA, SECURITY, WEB, SYSTEMS) to learn more, or type "START ASSESSMENT" for personalized recommendations!
@@ -343,15 +342,15 @@
 <category>
     <pattern>SALARY</pattern>
     <template>
-        **Computing Career Salary Ranges:**
+        Computing Career Salary Ranges:
         
-        💰 **Software Developer:** $70,000 - $150,000+
-        💰 **Data Scientist:** $80,000 - $180,000+  
-        💰 **Cybersecurity Specialist:** $75,000 - $160,000+
-        💰 **Web Developer:** $60,000 - $130,000+
-        💰 **Systems Admin/DevOps:** $60,000 - $150,000+
+        Software Developer: $70,000 - $150,000+
+        Data Scientist: $80,000 - $180,000+  
+        Cybersecurity Specialist: $75,000 - $160,000+
+        Web Developer: $60,000 - $130,000+
+        Systems Admin/DevOps: $60,000 - $150,000+
         
-        **Factors Affecting Salary:**
+        Factors Affecting Salary:
         • Experience level and skills
         • Geographic location
         • Company size and industry
@@ -368,23 +367,23 @@
 <category>
     <pattern>JOB MARKET</pattern>
     <template>
-        **Current Computing Job Market Outlook:**
+        Current Computing Job Market Outlook:
         
-        📈 **Highest Growth Areas:**
-        1. **Data Science** - 36% growth through 2031
-        2. **Cybersecurity** - 35% growth through 2031  
-        3. **Web Development** - 23-27% growth through 2031
-        4. **Software Development** - 25% growth through 2031
-        5. **DevOps Engineering** - 20%+ growth through 2031
+        Highest Growth Areas:
+        1. Data Science - 36% growth through 2031
+        2. Cybersecurity - 35% growth through 2031  
+        3. Web Development - 23-27% growth through 2031
+        4. Software Development - 25% growth through 2031
+        5. DevOps Engineering - 20%+ growth through 2031
         
-        🔥 **Hot Skills in Demand:**
+        Hot Skills in Demand:
         • Python, JavaScript, Java programming
         • Cloud platforms (AWS, Azure, Google Cloud)
         • Data analysis and machine learning
         • Cybersecurity and compliance
         • DevOps and automation tools
         
-        💼 **Key Industry Trends:**
+        Key Industry Trends:
         • Remote work opportunities expanding
         • AI/Machine Learning expertise increasingly valuable
         • Cloud computing skills critical
@@ -399,25 +398,25 @@
 <category>
     <pattern>HELP</pattern>
     <template>
-        **How to Use the CS Career Advisor Chatbot:**
+        How to Use the CS Career Advisor Chatbot:
         
-        🚀 **Getting Started:**
+        Getting Started:
         • Type "START ASSESSMENT" - Get personalized career recommendations
         • Type "LEARN ABOUT JOBS" - Explore all 5 career options
         
-        💼 **Direct Career Information:**
+        Direct Career Information:
         • "SOFTWARE" - Software development careers
         • "DATA" - Data science and analytics
         • "SECURITY" - Cybersecurity roles
         • "WEB" - Web development options
         • "SYSTEMS" - IT infrastructure and DevOps
         
-        📊 **Additional Information:**
+        Additional Information:
         • "SALARY" - Salary ranges for computing careers
         • "JOB MARKET" - Current industry outlook and trends
         • "EXAMPLES" - See sample conversations
         
-        ❓ **Need More Help:**
+        Need More Help:
         • Type "ABOUT" to learn about this chatbot
         • Type "EXAMPLES" for conversation samples
         
@@ -428,25 +427,25 @@
 <category>
     <pattern>ABOUT</pattern>
     <template>
-        **CS Career Advisor Chatbot**
+        CS Career Advisor Chatbot
         
-        🎯 **My Purpose:**
+        My Purpose:
         I help computer science students discover suitable career paths based on their interests and strengths.
         
-        🤖 **My Capabilities:**
+        My Capabilities:
         • Provide personalized career recommendations
         • Offer detailed information about 5 major computing fields
         • Share salary ranges and job market insights
         • Give next steps and career development advice
         
-        💼 **Career Areas I Cover:**
-        1. **Software Development/Engineering** - Application development
-        2. **Data Science/Analytics** - Data analysis and machine learning  
-        3. **Cybersecurity** - System protection and security
-        4. **Web Development** - Website and web application creation
-        5. **Systems Administration/DevOps** - IT infrastructure management
+        Career Areas I Cover:
+        1. Software Development/Engineering - Application development
+        2. Data Science/Analytics - Data analysis and machine learning  
+        3. Cybersecurity - System protection and security
+        4. Web Development - Website and web application creation
+        5. Systems Administration/DevOps - IT infrastructure management
         
-        🚀 **How I Work:**
+        How I Work:
         I use simple keyword responses to match you with career information, making it easy to explore different paths and find what interests you most.
         
         Ready to start? Type "START ASSESSMENT" or "LEARN ABOUT JOBS"!
@@ -456,25 +455,25 @@
 <category>
     <pattern>EXAMPLES</pattern>
     <template>
-        **Sample Conversation Examples:**
+        Sample Conversation Examples:
         
-        **Example 1 - Quick Career Info:**
+        Example 1 - Quick Career Info:
         You: "SOFTWARE"
         Me: [Provides detailed Software Developer information]
         
-        **Example 2 - Assessment Flow:**
+        Example 2 - Assessment Flow:
         You: "START ASSESSMENT"
         Me: [Asks about interests with keyword options]
         You: "DATA" 
         Me: [Provides Data Science career recommendation]
         
-        **Example 3 - Salary Research:**
+        Example 3 - Salary Research:
         You: "SALARY"
         Me: [Shows salary ranges for all careers]
         You: "SECURITY"
         Me: [Provides Cybersecurity career details]
         
-        **Quick Commands to Try:**
+        Quick Commands to Try:
         • "START ASSESSMENT" - Personalized recommendations
         • "WEB" - Web development info
         • "JOB MARKET" - Industry trends
@@ -492,12 +491,12 @@
         
         Remember: Your career path can evolve over time, so keep learning and exploring new opportunities!
         
-        🚀 **Keep Exploring:**
+        Keep Exploring:
         • Try "START ASSESSMENT" for another evaluation
         • Type "LEARN ABOUT JOBS" to explore different careers
         • Use "JOB MARKET" to stay updated on trends
         
-        Best of luck with your career journey in computer science! 🎓
+        Best of luck with your career journey in computer science!
     </template>
 </category>
 
@@ -514,7 +513,7 @@
         
         Remember: The perfect career is out there waiting for you - keep exploring and learning!
         
-        Come back anytime you need career guidance. Take care! 🎓✨
+        Come back anytime you need career guidance. Take care!
     </template>
 </category>
 
@@ -543,19 +542,19 @@
     <template>
         I'm not sure I understand that. Here are some things you can try:
         
-        🚀 **To Get Started:**
+        🚀 To Get Started:
         • "START ASSESSMENT" - Personalized career guidance
         • "LEARN ABOUT JOBS" - Explore all career options
         • "HELP" - See all available commands
         
-        💼 **For Career Information:**
+        💼 For Career Information:
         • "SOFTWARE" - Application development
         • "DATA" - Data science and analytics  
         • "SECURITY" - Cybersecurity roles
         • "WEB" - Web development
         • "SYSTEMS" - IT infrastructure and DevOps
         
-        📊 **Other Helpful Commands:**
+        📊*Other Helpful Commands:
         • "SALARY" - Salary information
         • "JOB MARKET" - Industry outlook
         • "EXAMPLES" - Sample conversations
